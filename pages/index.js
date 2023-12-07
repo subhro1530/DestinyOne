@@ -6,8 +6,8 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <HeroSection />
-      {/* Other sections and components */}
+      <HeroSection/>
+      {/* The rest of your page content goes here */}
     </div>
   );
 };
