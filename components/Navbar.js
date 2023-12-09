@@ -39,7 +39,7 @@ const Navbar = () => {
     <Box
       as="nav"
       position="fixed"
-      width="95vw"
+      width={isScrolled ? "100vw" : "95vw"}
       p={isScrolled ? "none" : "3"}
       bgColor="transparent"
       transition="background-color 0.3s"
