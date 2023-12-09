@@ -6,9 +6,10 @@ import Destination from "@/components/Destination";
 const Home = () => {
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <HeroSection />
-      <Destination />
+      <HeroSection />
+      {/* <Destination /> */}
       {/* The rest of your page content goes here */}
     </div>
   );
