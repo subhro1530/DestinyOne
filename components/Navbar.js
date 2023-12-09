@@ -100,7 +100,7 @@ const Navbar = () => {
           height="10vh"
           alignItems="center"
           fontWeight="bold"
-          fontFamily="Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+          fontFamily=""
           fontSize={15}
           letterSpacing={1}
           bgColor={isScrolled ? "white" : "transparent"}
@@ -111,7 +111,6 @@ const Navbar = () => {
           <Flex>
             <Box
               mr={8}
-              textShadow="1px 1px 1px black"
               style={{ cursor: "pointer" }}
               _hover={
                 isScrolled
@@ -123,7 +122,6 @@ const Navbar = () => {
             </Box>
             <Box
               mr={8}
-              textShadow="1px 1px 1px black"
               style={{ cursor: "pointer" }}
               _hover={
                 isScrolled
@@ -135,7 +133,6 @@ const Navbar = () => {
             </Box>
             <Box
               mr={8}
-              textShadow="1px 1px 1px black"
               style={{ cursor: "pointer" }}
               _hover={
                 isScrolled
@@ -147,7 +144,6 @@ const Navbar = () => {
             </Box>
             <Box
               mr={8}
-              textShadow="1px 1px 1px black"
               style={{ cursor: "pointer" }}
               _hover={
                 isScrolled
@@ -159,7 +155,6 @@ const Navbar = () => {
             </Box>
             <Box
               mr={8}
-              textShadow="1px 1px 1px black"
               style={{ cursor: "pointer" }}
               _hover={
                 isScrolled
@@ -171,7 +166,6 @@ const Navbar = () => {
             </Box>
             <Box
               mr={8}
-              textShadow="1px 1px 1px black"
               style={{ cursor: "pointer" }}
               _hover={
                 isScrolled

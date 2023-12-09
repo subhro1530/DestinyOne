@@ -10,11 +10,11 @@ import {
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const imageUrls = [
-  "https://source.unsplash.com/1600x900/?night-travel",
-  "https://source.unsplash.com/1600x900/?night-vacation",
-  "https://source.unsplash.com/1600x900/?night-explore",
-  "https://source.unsplash.com/1600x900/?night-adventure",
-  "https://source.unsplash.com/1600x900/?night-wanderlust",
+  "https://source.unsplash.com/1600x900/?dark",
+  "https://source.unsplash.com/1600x900/?black-explore",
+  "https://source.unsplash.com/1600x900/?black",
+  "https://source.unsplash.com/1600x900/?black-adventure",
+  "https://source.unsplash.com/1600x900/?black-wanderlust",
 ];
 
 const slides = [
