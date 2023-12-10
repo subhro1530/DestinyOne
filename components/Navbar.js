@@ -10,7 +10,6 @@ import {
   Link,
   chakra,
 } from "@chakra-ui/react";
-import { GiHamburgerMenu } from "react-icons/gi"; //
 import { BiSearch } from "react-icons/bi";
 const StyledBiSearch = chakra(BiSearch);
 
@@ -20,16 +19,10 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-
-      // Adjust the threshold based on your design
       const threshold = 50;
-
       setIsScrolled(scrollY > threshold);
     };
-
     window.addEventListener("scroll", handleScroll);
-
-    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -39,16 +32,21 @@ const Navbar = () => {
     <Box
       as="nav"
       position="fixed"
-      width="95vw"
+      width={isScrolled ? "100vw" : "95vw"}
       p={isScrolled ? "none" : "3"}
       bgColor="transparent"
       transition="background-color 0.3s"
       zIndex={1}
-      marginLeft="6rem"
+      marginLeft={isScrolled ? "none" : "6rem"}
       marginTop={isScrolled ? "none" : "1rem"}
       color="white"
+      display={{ base: "none", md: "block" }}
     >
-      <Flex align="center" flexDirection="column" width="90%">
+      <Flex
+        align="center"
+        flexDirection="column"
+        width={isScrolled ? "100%'" : "90%"}
+      >
         <VStack
           spacing={4}
           align="center"
@@ -62,7 +60,11 @@ const Navbar = () => {
           display={isScrolled ? "none" : "flex"}
           transition="all ease-in-out 0.8s"
         >
-          <Box flexDirection="column" width="30%" letterSpacing="0.5px">
+          <Box
+            flexDirection="column"
+            width="30%"
+            letterSpacing="base:'0.2px',md:'0.5px'"
+          >
             <Box>
               <Text fontWeight="bold" display="inline-block">
                 Call us:
@@ -176,11 +178,6 @@ const Navbar = () => {
               <Link style={{ textDecoration: "none" }}>CONTACTS</Link>
             </Box>
           </Flex>
-        </Box>
-        <Divider borderColor="white" opacity="0.6" />
-        {/* Hamburger Icon for Mobile */}
-        <Box display={{ base: "flex", md: "none" }}>
-          <GiHamburgerMenu size={24} />
         </Box>
       </Flex>
     </Box>
