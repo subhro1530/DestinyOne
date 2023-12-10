@@ -4,20 +4,23 @@ import HeroSection from "../components/HeroSection";
 import Destination from "../components/Destination";
 import StatusSection from "../components/StatusSection"; // Assuming you have a StatusSection component
 import Status from "@/components/Status";
+import NavbarMob from "@/components/NavbarMob";
 
 const Home = () => {
   return (
     <div>
       <Navbar />
+      <NavbarMob/>
+      <HeroSection />
       <HeroSection />
       <Destination />
-      <StatusSection />
+      {/* <StatusSection /> */}
       {/* Example of using Status with a background image link */}
-      <Status
+      {/* <Status
         number={123}
         label="Example Status"
         bgImageLink="https://wallpapershome.com/images/pages/ico_hs/19250.jpg"
-      />
+      /> */}
     </div>
   );
 };
