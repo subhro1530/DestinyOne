@@ -131,7 +131,6 @@ const NavbarMob = () => {
           <DrawerContent style={{ marginTop: "4.5rem" }}>
             <DrawerHeader textDecoration="underline">DestinyOne</DrawerHeader>
             <DrawerBody style={{ paddingLeft: "0", paddingRight: "0" }}>
-              {/* Your navigation links go here */}
               <Flex flexDirection="column" align="center">
                 <Link
                   _hover={{ bgColor: "cyan", color: "white" }}
