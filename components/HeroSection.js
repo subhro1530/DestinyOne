@@ -16,6 +16,13 @@ const imageUrls = [
   "https://source.unsplash.com/1600x900/?black-adventure",
   "https://source.unsplash.com/1600x900/?black-wanderlust",
 ];
+const imageUrlsMob = [
+  "https://source.unsplash.com/480x800/?dark",
+  "https://source.unsplash.com/480x800/?black-explore",
+  "https://source.unsplash.com/480x800/?black",
+  "https://source.unsplash.com/480x800/?black-adventure",
+  "https://source.unsplash.com/480x800/?black-wanderlust",
+];
 
 const slides = [
   {
@@ -59,7 +66,7 @@ const HeroSection = () => {
     }, 10000);
 
     return () => clearInterval(intervalId);
-  }, [currentSlide, slides.length]);
+  }, [currentSlide]);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -80,7 +87,10 @@ const HeroSection = () => {
           left={`${index - currentSlide}00%`}
           width="100%"
           height="100%"
-          backgroundImage={`url(${imageUrls[index]})`}
+          backgroundImage={{
+            base: `url(${imageUrlsMob[index]})`,
+            md: `url(${imageUrls[index]})`,
+          }}
           backgroundSize="cover"
           backgroundColor="black"
           backgroundAttachment="fixed"
@@ -90,8 +100,8 @@ const HeroSection = () => {
           display="flex"
           flexDirection="column"
           justifyContent="center"
-          alignItems="flex-start"
-          padding={{ base: "80px", md: "120px" }}
+          alignItems={{ base: "center", md: "flex-start" }}
+          padding={{ base: "0px", md: "120px" }}
         >
           <Heading
             as="h2"
@@ -124,9 +134,9 @@ const HeroSection = () => {
         position="absolute"
         left="0"
         top="50%"
-        transform="translateY(-50%)"
+        transform={{ base: "translateY(4.3rem)", md: "translateY(-50%)" }}
         borderRadius="100px"
-        padding="28px 20px"
+        padding={{ base: "9px 5px", md: "28px 20px" }}
         backgroundColor="white"
         m={5}
       >
@@ -137,9 +147,9 @@ const HeroSection = () => {
         position="absolute"
         right="0"
         top="50%"
-        transform="translateY(-50%)"
+        transform={{ base: "translateY(4.3rem)", md: "translateY(-50%)" }}
         borderRadius="100px"
-        padding="28px 20px"
+        padding={{ base: "9px 5px", md: "28px 20px" }}
         backgroundColor="white"
         m={5}
       >
