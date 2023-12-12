@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import Destination from "../components/Destination";
 import NavbarMob from "@/components/NavbarMob";
+import Gallery from "@/components/Gallery";
 
 const Home = () => {
   return (
@@ -10,7 +11,8 @@ const Home = () => {
       <Navbar />
       <NavbarMob />
       <HeroSection />
-      <Destination />
+      {/* <Destination /> */}
+      <Gallery />
     </div>
   );
 };
