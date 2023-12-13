@@ -4,6 +4,7 @@ import HeroSection from "../components/HeroSection";
 import Destination from "../components/Destination";
 import NavbarMob from "@/components/NavbarMob";
 import Gallery from "@/components/Gallery";
+import Newsletter from "@/components/Newsletter";
 
 const Home = () => {
   return (
@@ -11,8 +12,8 @@ const Home = () => {
       <Navbar />
       <NavbarMob />
       <HeroSection />
-      {/* <Destination /> */}
       <Gallery />
+      <Newsletter />
     </div>
   );
 };

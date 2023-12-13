@@ -38,8 +38,8 @@ const slides = [
     buttonLink: "/local-gems",
   },
   {
-    heading: "Don’t Miss These Experiences",
-    text: "Make your trip unforgettable. Discover must-try experiences and activities that you won’t want to miss while you’re there.",
+    heading: "Don't Miss These Experiences",
+    text: "Make your trip unforgettable. Discover must-try experiences and activities that you won't want to miss while you're there.",
     buttonLabel: "Plan Your Adventure",
     buttonLink: "/plan-adventure",
   },
